@@ -44,3 +44,8 @@ def tokenize(text, stem=False):
     if stem:
         tokens = [stemmer.stem(t) for t in tokens]
     return tokens
+
+
+def extract_bag_of_words(tokens):
+    return set(tokens)
+
