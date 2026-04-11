@@ -1,0 +1,14 @@
+[
+  {"id": 1, "title": "Python lists", "text": "Python lists are ordered mutable collections. You can append, remove, and slice elements easily.", "tags": ["python", "data-structures"], "year": 2021, "author": "alice"},
+  {"id": 2, "title": "Python dictionaries", "text": "Dictionaries store key-value pairs. Keys must be hashable. Lookup is O(1) on average.", "tags": ["python", "data-structures"], "year": 2021, "author": "alice"},
+  {"id": 3, "title": "Binary search", "text": "Binary search finds an element in a sorted array in O(log n) time by repeatedly halving the search space.", "tags": ["algorithms", "search"], "year": 2022, "author": "bob"},
+  {"id": 4, "title": "Hash tables", "text": "A hash table uses a hash function to map keys to buckets. Collisions are resolved by chaining or open addressing.", "tags": ["algorithms", "data-structures"], "year": 2022, "author": "bob"},
+  {"id": 5, "title": "SQL joins", "text": "SQL joins combine rows from two tables. INNER JOIN returns matching rows, LEFT JOIN includes all rows from the left table.", "tags": ["sql", "databases"], "year": 2023, "author": "carol"},
+  {"id": 6, "title": "Database indexing", "text": "Indexes speed up query execution by allowing the database engine to find rows without scanning the full table.", "tags": ["sql", "databases"], "year": 2023, "author": "carol"},
+  {"id": 7, "title": "Docker containers", "text": "Docker packages applications and their dependencies into containers, ensuring consistent environments across machines.", "tags": ["devops", "docker"], "year": 2023, "author": "dave"},
+  {"id": 8, "title": "Docker networking", "text": "Docker networks allow containers to communicate. Bridge mode is the default; host mode shares the host network stack.", "tags": ["devops", "docker"], "year": 2024, "author": "dave"},
+  {"id": 9, "title": "Gradient descent", "text": "Gradient descent minimizes a loss function by iteratively moving in the direction of the negative gradient.", "tags": ["ml", "optimization"], "year": 2024, "author": "eve"},
+  {"id": 10, "title": "Neural networks", "text": "Neural networks are composed of layers of neurons. Each neuron applies a weighted sum and an activation function.", "tags": ["ml", "deep-learning"], "year": 2024, "author": "eve"},
+  {"id": 11, "title": "Vector databases", "text": "Vector databases store and index high-dimensional embeddings, enabling fast approximate nearest-neighbor search.", "tags": ["ml", "databases"], "year": 2024, "author": "frank"},
+  {"id": 12, "title": "Retrieval-augmented generation", "text": "RAG systems retrieve relevant documents from a knowledge base and provide them as context to a language model.", "tags": ["ml", "nlp"], "year": 2024, "author": "frank"}
+]
