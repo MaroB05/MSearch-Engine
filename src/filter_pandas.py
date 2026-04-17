@@ -1,21 +1,4 @@
-import pandas as pd
-
-CORPUS_PATH = "corpus/corpus.json"
-PARQUET_PATH = "corpus/corpus.parquet"
-
-def load_corpus(path):
-    data = pd.read_json(path)
-    data = data.set_index("id")
-    return data
-
-def prepare_and_save(corpus_path, parquet_path):
-    data = load_corpus(corpus_path)
-    data.to_parquet(parquet_path)
-    print(f"Saved {len(data)} documents to {parquet_path}")
-    return data
-
-def load_prepared(parquet_path):
-    return pd.read_parquet(parquet_path)
+from utils import *
 
 def filter_corpus(corpus, ids=None, tags=None, authors=None, year_from=None, year_to=None):
     result = corpus.copy()
@@ -34,12 +17,8 @@ def filter_corpus(corpus, ids=None, tags=None, authors=None, year_from=None, yea
     return result
 
 if __name__ == "__main__":
-    import os
-    if os.path.exists(PARQUET_PATH):
-        data = load_prepared(PARQUET_PATH)
-        print("Loaded from cache.")
-    else:
-        data = prepare_and_save(CORPUS_PATH, PARQUET_PATH)
+
+    data = get_corpus(CORPUS_PATH, PARQUET_PATH)
 
     # test cases
     print("\n--- author alice ---")

@@ -49,3 +49,6 @@ def tokenize(text, stem=False):
 def extract_bag_of_words(tokens):
     return set(tokens)
 
+schema = {
+    
+        }
